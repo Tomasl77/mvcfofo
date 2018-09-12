@@ -31,7 +31,16 @@ if (isset($_GET['action'])) {
         else {
             throw new Exception('Erreur : aucun identifiant de billet envoyé');
             }
-        }    
+        }  
+    elseif (isset($_GET['page'])) {
+         if (isset($_GET['id']) && $_GET['id']>0) {
+
+         }
+         else
+         {
+            throw new Exception("Erreur : Page introuvable");           
+         }
+     } 
     }
     else {
     listTop();

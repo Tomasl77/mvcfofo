@@ -1,5 +1,6 @@
 <?php
 
+require_once('./models/dbconnect.php');
 require_once('./models/postManager.php');
 require_once('./models/commentsManager.php');
 
@@ -10,6 +11,12 @@ function listTop()
     require('./views/frontEnd/listTopics.php');
 }
 
+function getPage()
+{
+    $postManager = new PostManager();
+    $page = $postManager->getTopics();
+    require('.views/frontEnd/pages.php');
+}
 function post()
 {
 	$postManager = new PostManager();

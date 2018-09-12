@@ -30,7 +30,7 @@
 						?>  
 						<tr>
 							<td>
-								<a href="<?= $top['page'] ?>" id="ahref"><?= $top['name'] ?></a>
+								<a href="<?= 'views/frontEnd/page.php?name='.$top['page'] ?>" id="ahref"><?= $top['name'] ?></a>
 							</td>
 						</tr>   
 						<?php

@@ -1,5 +1,5 @@
 <?php 
-class commentsManager extends dbConnect
+class commentsManager extends dbConnection
 {
 	public function getComments($postId)
 	{
